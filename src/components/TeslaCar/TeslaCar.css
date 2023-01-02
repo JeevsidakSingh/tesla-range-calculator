@@ -1,4 +1,4 @@
-.tesla-wheel--19 {
+.tesla-wheel-19 {
     background-image: url(../../assets/wheel-19.png);
     -webkit-animation: infinite-spinning 250ms steps(6) infinite;
     -moz-animation: infinite-spinning 250ms steps(6) infinite;
@@ -6,7 +6,7 @@
     animation: infinite-spinning 250ms steps(6) infinite; 
 }
 
-.tesla-wheel--21 {
+.tesla-wheel-21 {
     background-image: url(../../assets/wheel-21.png);
     -webkit-animation: infinite-spinning 480ms steps(12) infinite;
     -moz-animation: infinite-spinning 480ms steps(12) infinite;

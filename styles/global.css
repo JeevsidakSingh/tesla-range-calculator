@@ -4,7 +4,7 @@
 
 @layer components {
     .tesla-wheel {
-        @apply z-50 h-[80px] w-[80] bottom-0 absolute bg-no-repeat bg-left-top bg-cover
+        @apply z-50 h-[80px] w-[80] bottom-0 absolute bg-no-repeat bg-left-top bg-cover 
     }
 
     .tesla-wheel-front {
@@ -13,5 +13,17 @@
 
     .tesla-wheel-rear {
         @apply right-[72px]
+    }
+
+    .tesla-wheel-19 {
+        @apply bg-wheels19 animate-spin
+    }
+
+    .tesla-wheel-21 {
+        @apply bg-wheels21 animate-spin
+    }
+
+    .tesla-stats-icon-60 {
+        @apply bg-icon60
     }
 }
