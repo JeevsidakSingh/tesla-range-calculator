@@ -108,13 +108,13 @@ class TeslaBattery extends React.Component {
   handleChangeClimate() {
     const config = {...this.state.config}
     config['climate'] = !this.state.config.climate
-    this.setState({ config })
+    this.setState({ config }, () => {this.statsUpdate()})
   }
 
   handleChangeWheels(size) {
     const config = {...this.state.config}
     config['wheels'] = size
-    this.setState({config})
+    this.setState({config}, () => {this.statsUpdate()})
   }
   
   render() {
@@ -125,7 +125,6 @@ class TeslaBattery extends React.Component {
           <h1 className='py-6 font-serif sm:text-5xl font-thin text-4xl text-center tracking-wide'>
               Range Per Charge
           </h1>
-          
           <TeslaCar wheelsize={config.wheels}/>
           <TeslaStats carstats={carstats}/>
           <div className='lg:flex pb-5 w-[100%] content-center'>
