@@ -23,7 +23,11 @@
         @apply bg-wheels21 animate-spin
     }
 
-    .tesla-stats-icon-60 {
-        @apply bg-icon60
+    .tesla-wheel-item-19 {
+        @apply bg-wheels19Button
+    }
+
+    .tesla-wheel-item-21 {
+        @apply bg-wheels21Button
     }
 }

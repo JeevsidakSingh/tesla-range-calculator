@@ -14,7 +14,13 @@ module.exports = {
         'icon75': "url('assets/models/75.svg')",
         'icon75d': "url('assets/models/75d.svg')",
         'icon90d': "url('assets/models/90d.svg')",
-        'icon100d': "url('assets/models/100d.svg')",
+        'iconp100d': "url('assets/models/p100d.svg')",
+        'acOff': "url('assets/climate/ac-off.svg')",
+        'acOn': "url('assets/climate/ac-on.svg')",
+        'heatOff': "url('assets/climate/heat-off.svg')",
+        'heatOn': "url('assets/climate/heat-on.svg')",
+        'wheels19Button': "url('assets/wheels/19.svg')",
+        'wheels21Button': "url('assets/wheels/21.svg')"
       }
     },
   },
