@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header';
+import { ThemeProvider } from './components/ThemeContext';
 import TeslaBattery from './containers/TeslaBattery';
 
 const counterDefaultVal = {
@@ -21,10 +22,11 @@ const counterDefaultVal = {
 
 function App() {
   return (
-    <div>
+    <ThemeProvider>
       <Header />
       <TeslaBattery counterDefaultVal={counterDefaultVal}/>
-    </div>
+    </ThemeProvider>
+    
   );
 }
 

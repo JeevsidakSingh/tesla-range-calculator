@@ -2,7 +2,7 @@ import React from 'react'
 
 function TeslaNotice() {
   return (
-    <div className='sm:text-base text-sm text-slate-700 font-serif text-center'>
+    <div className='dark:text-white sm:text-base text-sm text-slate-700 font-serif text-center'>
         <p>
             The actual amount of range that you experience will vary based
             on your particular use conditions. See how particular use conditions

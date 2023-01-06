@@ -121,8 +121,8 @@ class TeslaBattery extends React.Component {
     const {config, carstats} = this.state;
     
     return(
-      <form className='m-auto'>
-          <h1 className='py-6 font-serif sm:text-5xl font-thin text-4xl text-center tracking-wide'>
+      <form className='dark:bg-slate-600 m-auto'>
+          <h1 className='dark:text-white py-6 font-serif sm:text-5xl font-thin text-4xl text-center tracking-wide'>
               Range Per Charge
           </h1>
           <TeslaCar wheelsize={config.wheels}/>
@@ -163,7 +163,9 @@ class TeslaBattery extends React.Component {
               </div>
             </div>
           </div>
-          <TeslaNotice />
+          <div className='pb-10 dark:lg:pb-24'>
+            <TeslaNotice />
+          </div>
       </form>
     )
   }

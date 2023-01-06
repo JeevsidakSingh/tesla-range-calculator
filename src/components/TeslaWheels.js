@@ -8,7 +8,7 @@ function LabelLists(props) {
   const changeHandler = props.wheels.handleChangeWheels
   const sizes = [19, 21]
   const LabelItems = sizes.map(size => (
-    <label key={size} className={`cursor-pointer w-[47%] h-[65px] inline-block border-1 border-solid border- pt-[20px] pl-[90px] bg-[#f7f7f7] mr-2 ${value == size ? 'border-2 border-[#39f] shaddow-[inset_0_0_0_1px_#39f]' : ''}`}>
+    <label key={size} className={`dark:bg-gray-400 cursor-pointer w-[47%] h-[65px] inline-block border-1 border-solid border- pt-[20px] pl-[90px] bg-[#f7f7f7] mr-2 ${value === size ? 'border-2 border-[#39f] shaddow-[inset_0_0_0_1px_#39f]' : ''}`}>
       <img className='-translate-x-16 -translate-y-3' src={size === '19' ? wheel19 : wheel21} alt='w'/>
       <input 
         className='h-[1px] w-[1px] m-[-1px] overflow-hidden absolute cursor-pointer'
@@ -18,8 +18,7 @@ function LabelLists(props) {
         checked={value === size}
         onChange={() => {changeHandler(size)}}
       />
-      {console.log(value)}
-      <p className='h-[100%] font-serif text-[18px] text-[#333] -translate-y-[45px]'> {size}° </p>
+      <p className='dark:text-white h-[100%] font-serif text-[18px] text-[#333] -translate-y-[45px]'> {size}° </p>
     </label>
   ))
   return (
@@ -31,7 +30,7 @@ function LabelLists(props) {
 
 const TeslaWheels = (props) => (
   <div className='float-left w-[355px]'>
-    <p className='tracking-[2px] font-serif sm:text-2xl text-lg'>Wheels</p>
+    <p className='dark:text-white tracking-[2px] font-serif sm:text-2xl text-lg'>Wheels</p>
     <div className='mt-[10px] cf'>
       <LabelLists wheels={props} />
     </div>
