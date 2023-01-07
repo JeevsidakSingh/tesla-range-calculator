@@ -22,7 +22,22 @@ module.exports = {
         'heatOn': "url('assets/climate/heat-on.svg')",
         'wheels19Button': "url('assets/wheels/19.svg')",
         'wheels21Button': "url('assets/wheels/21.svg')"
-      }
+      },
+      keyframes: {
+        'fade-in-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        },
+      },
+      animation: {
+        'fade-in-down': 'fade-in-down 2s ease-out'
+    }
     },
   },
   plugins: [],

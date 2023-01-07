@@ -9,7 +9,7 @@ function Header() {
   const {theme, setTheme} = React.useContext(ThemeContext)
 
   return (
-    <div>
+    <div className='animate-fade-in-down'>
       {theme === 'dark' ? (
         <div className='py-6 flex justify-center bg-slate-900'>
           <img className='w-1/6 flex-shrink-0 justify-center h-13px py-0' src={logoUrl} alt='Tesla' />
