@@ -1,3 +1,11 @@
+# Tesla Range Calculator
+Calculate the range of your EV based on its model and your driving haibts!
+
+
+https://user-images.githubusercontent.com/109756410/213531760-37424263-c9dc-457e-bf62-6fb1ab6f57ad.mp4
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
